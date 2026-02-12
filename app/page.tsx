@@ -5,144 +5,122 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="w-full bg-[#0a0a0a] min-h-screen">
-      {/* Hero Section */}
-      <section className="relative w-full h-screen bg-[#0a0a0a] overflow-hidden flex flex-col items-center justify-center">
-        <div className="absolute inset-0 pointer-events-none opacity-[0.02]">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" strokeWidth="0.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
-        </div>
+    <main className="w-full min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--accent)] selection:text-white">
+      {/* Background Noise/Texture */}
+      <div className="fixed inset-0 bg-noise opacity-50 pointer-events-none z-0" />
 
-        <div className="relative z-10 text-center">
-          <h1 className="dot-matrix text-6xl md:text-7xl font-bold text-white mb-4 fade-in-up">
+      {/* Hero Section */}
+      <section className="relative w-full h-screen flex flex-col items-center justify-center p-6 z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center"
+        >
+          <div className="mb-2">
+            <span className="font-tech text-xs tracking-[0.2em] text-[var(--accent)] uppercase">
+              Est. 2025
+            </span>
+          </div>
+          <h1 className="font-dot text-7xl md:text-9xl font-bold mb-6 tracking-tighter leading-none">
             NOTHING
           </h1>
-          <p className="tech-text text-sm text-white/60 text-center max-w-md mb-8 mx-auto">
-            The future of transparent engineering
+          <p className="font-sans text-sm md:text-base text-white/50 max-w-sm mx-auto leading-relaxed mb-10">
+            Essential dropshipping. No clutter. Just products.
+            <br />
+            The future of transparent commerce.
           </p>
-          <div className="flex gap-4 justify-center">
-            <button className="glass-panel px-8 py-3 text-white hover-glow rounded-lg transition">
-              Explore Store
+
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <button className="glass-panel px-8 py-4 text-sm font-medium tracking-wide hover:bg-white/10 transition-all duration-300 w-full md:w-auto min-w-[160px]">
+              SHOP ALL
             </button>
-            <button className="glass-panel px-8 py-3 text-nothing-red hover-glow border border-nothing-red/50 rounded-lg transition">
-              View Details
+            <button className="px-8 py-4 text-sm font-medium tracking-wide text-[var(--accent)] hover:text-white transition-colors duration-300 flex items-center gap-2 group">
+              READ MANIFESTO
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
             </button>
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      {/* Product Section */}
-      <section className="w-full py-24 px-4 md:px-8 lg:px-16 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto mb-16">
-          <h2 className="dot-matrix text-4xl md:text-5xl font-bold text-white mb-4">
-            PRODUCT CATALOG
-          </h2>
-          <p className="tech-text text-white/60 mb-2">
-            Transparent Engineering Meets Modern Design
-          </p>
-          <div className="h-1 w-32 bg-gradient-to-r from-nothing-red to-transparent" />
+      {/* Product Highlight Section */}
+      <section className="relative w-full py-32 px-6 md:px-12 max-w-8xl mx-auto z-10">
+        <div className="flex justify-between items-end mb-16 border-b border-white/10 pb-6">
+          <h2 className="font-dot text-3xl md:text-4xl">LATEST ARRIVALS</h2>
+          <span className="font-tech text-xs text-white/40 hidden md:block">
+            BATCH_001 // Q1_2026
+          </span>
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: "Phone Pro", spec: "12GB RAM" },
-              { title: "Ear Buds", spec: "32h Battery" },
-              { title: "Watch Pro", spec: "14 Days" },
-              { title: "Case", spec: "Premium Glass" },
-              { title: "Hub", spec: "140W USB-C" },
-              { title: "Kit", spec: "8 Types" },
-            ].map((product, idx) => (
-              <motion.div
-                key={idx}
-                className="glass-panel p-6 rounded-lg hover-glow transition cursor-pointer h-48 flex flex-col justify-between"
-                whileHover={{ scale: 1.02 }}
-              >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+          {[
+            { name: "PHONE (1)", price: "$299", tag: "BESTSELLER" },
+            { name: "EAR (stick)", price: "$99", tag: "NEW" },
+            { name: "POWER (45W)", price: "$35", tag: "ESSENTIAL" },
+            { name: "CASE (clear)", price: "$25", tag: "ACCESSORY" },
+            { name: "WATCH (pro)", price: "$69", tag: "SMART" },
+            { name: "CABLE (c-c)", price: "$15", tag: "UTILITY" },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="group cursor-pointer"
+            >
+              <div className="aspect-[4/5] bg-white/5 border border-white/10 rounded-sm mb-6 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-4 left-4 font-tech text-[10px] bg-black/50 backdrop-blur-md px-2 py-1 rounded-full border border-white/10">
+                  {item.tag}
+                </div>
+                {/* Placeholder for Product Image */}
+                <div className="w-full h-full flex items-center justify-center text-white/10 font-dot text-6xl group-hover:scale-105 transition-transform duration-700">
+                  {(i + 1).toString().padStart(2, '0')}
+                </div>
+
+                {/* Quick Add Button */}
+                <div className="absolute bottom-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <button className="bg-[var(--accent)] text-white p-3 rounded-full hover:bg-red-600 transition-colors">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="dot-matrix text-xl text-white mb-2">
-                    {product.title}
+                  <h3 className="text-lg font-medium mb-1 group-hover:text-[var(--accent)] transition-colors">
+                    {item.name}
                   </h3>
-                  <p className="tech-text text-nothing-red text-xs mb-4">
-                    {product.spec}
+                  <p className="font-tech text-xs text-white/50">
+                    TRANSPARENT EDITION
                   </p>
                 </div>
-                <button className="tech-text text-white/60 hover:text-nothing-red transition text-sm">
-                  Add to Cart →
-                </button>
-              </motion.div>
-            ))}
-          </div>
+                <span className="font-tech text-sm">{item.price}</span>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
 
       {/* Footer */}
-      <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-[#0a0a0a] border-t border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <motion.div className="space-y-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
-              <h4 className="dot-matrix text-lg text-white">NOTHING STORE</h4>
-              <p className="tech-text text-white/60 text-sm">
-                Transparent engineering meets minimalist design.
-              </p>
-            </motion.div>
-
-            <motion.div className="space-y-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-              <h4 className="dot-matrix text-lg text-white">QUICK LINKS</h4>
-              <ul className="space-y-2">
-                {["Products", "Support", "Warranty", "Feedback"].map((link) => (
-                  <li key={link}>
-                    <a href="#" className="tech-text text-white/60 hover:text-nothing-red text-sm transition">
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div className="space-y-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              <h4 className="dot-matrix text-lg text-white">CONNECT</h4>
-              <div className="flex gap-3">
-                {["X", "IG", "YT"].map((platform) => (
-                  <button key={platform} className="glass-panel w-10 h-10 rounded-full flex items-center justify-center tech-text text-white/60 hover:text-nothing-red transition text-xs">
-                    {platform}
-                  </button>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="border-t border-white/10 pt-8 text-center">
-            <p className="tech-text text-white/40 text-xs">
-              © 2025 Nothing Inc. • Transparent Engineering
+      <footer className="relative w-full py-20 px-6 border-t border-white/10 bg-black/20 backdrop-blur-sm z-10">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-center md:text-left">
+            <h4 className="font-dot text-2xl mb-2">NOTHING STORE</h4>
+            <p className="font-tech text-xs text-white/40">
+              © 2026 • LONDON • DESIGNED BY SPADE
             </p>
           </div>
+          <div className="flex gap-8 font-tech text-xs text-white/60">
+            <a href="#" className="hover:text-white transition-colors">TERMS</a>
+            <a href="#" className="hover:text-white transition-colors">PRIVACY</a>
+            <a href="#" className="hover:text-white transition-colors">CONTACT</a>
+          </div>
         </div>
-      </section>
-
-      {/* Navigation Dock */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
-        <motion.div
-          className="glass-pill p-3 flex items-center gap-2 rounded-full"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          {["Home", "Store", "Search", "Alerts", "Cart", "Profile"].map((item) => (
-            <motion.button
-              key={item}
-              className="w-12 h-12 rounded-full flex items-center justify-center text-white/60 hover:text-nothing-red transition text-xs"
-              whileHover={{ scale: 1.1 }}
-            >
-              {item[0]}
-            </motion.button>
-          ))}
-        </motion.div>
-      </div>
+      </footer>
     </main>
   );
 }

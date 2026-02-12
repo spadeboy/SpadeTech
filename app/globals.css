@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #f0f0f0;
+  --accent: #d71921;
+  /* Nothing Red */
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+}
 
 * {
   margin: 0;
@@ -17,110 +26,84 @@ html {
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: "Inter", sans-serif;
   line-height: 1.6;
+  font-weight: 300;
 }
 
-/* Dot Matrix Font for Headers */
+/* Utilities */
 @layer utilities {
-  .dot-matrix {
-    font-family: "DotGothic16", "Share Tech Mono", monospace;
-    letter-spacing: 0.05em;
-    font-weight: 700;
+  .font-dot {
+    font-family: "DotGothic16", monospace;
   }
 
-  /* Glass Panel Utility - Glassmorphism Effect */
+  .font-tech {
+    font-family: "Share Tech Mono", monospace;
+  }
+
+  /* Refined Glass Panel */
   .glass-panel {
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    /* Minimalist radius */
   }
 
-  /* Glass Pill for Navigation */
+  /* Minimalist Pill */
   .glass-pill {
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    background-color: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid var(--glass-border);
     border-radius: 999px;
   }
 
-  /* Nothing Brand Red Accent */
-  .nothing-red {
-    color: #d71921;
+  .text-accent {
+    color: var(--accent);
   }
 
-  .text-nothing-red {
-    color: #d71921;
+  .bg-accent {
+    background-color: var(--accent);
   }
 
-  .border-nothing-red {
-    border-color: #d71921;
+  .border-accent {
+    border-color: var(--accent);
   }
 
-  .bg-nothing-red {
-    background-color: #d71921;
-  }
-
-  /* Industrial styling */
-  .industrial-border {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* Hover glow effect */
   .hover-glow {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
   }
 
   .hover-glow:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
   }
 
-  /* Tech-style text decoration */
-  .tech-text {
-    font-family: "Share Tech Mono", monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.7;
-  }
-
-  /* Smooth fade in animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
+  /* Noise Texture (Optional, keep it subtle) */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
   }
 }
 
-/* Scrollbar styling */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  background: #333;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #444;
 }

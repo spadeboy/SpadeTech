@@ -45,17 +45,28 @@ const Navbar: React.FC = () => {
             {/* Icon */}
             <item.icon
               size={20}
+<<<<<<< HEAD
               className={`relative z-10 transition ${
                 activeTab === item.id
                   ? "text-nothing-red"
                   : "text-white/60 group-hover:text-white"
               }`}
+=======
+              className={`relative z-10 transition ${activeTab === item.id
+                ? "text-accent"
+                : "text-white/60 group-hover:text-white"
+                }`}
+>>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
             />
 
             {/* Badge */}
             {item.badge && (
               <motion.div
+<<<<<<< HEAD
                 className="absolute -top-1 -right-1 w-5 h-5 bg-nothing-red rounded-full flex items-center justify-center text-white text-xs font-bold"
+=======
+                className="absolute -top-1 -right-1 w-5 h-5 bg-accent rounded-full flex items-center justify-center text-white text-xs font-bold"
+>>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
               >
@@ -78,7 +89,11 @@ const Navbar: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
+<<<<<<< HEAD
         <span className="text-nothing-red">●</span> Live · Premium Support Active
+=======
+        <span className="text-accent">●</span> Live · Premium Support Active
+>>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
       </motion.div>
     </div>
   );
