@@ -1,36 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-<<<<<<< HEAD
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Next.js specific */
-    "paths": {
-      "@/*": ["./*"]
-    },
-
-    /* Linting */
-    "strict": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
-=======
     "lib": [
       "dom",
       "dom.iterable",
@@ -71,5 +41,4 @@
   "exclude": [
     "node_modules"
   ]
->>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
 }

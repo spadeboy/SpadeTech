@@ -1,0 +1,29 @@
+(node:17528) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+X [ERROR] Expected string in JSON but found "<<"
+
+    tsconfig.json:4:0:
+      4 │ <<<<<<< HEAD
+        ╵ ~~
+
+[31mfailed to load config from D:\Dropship\vitest.config.ts[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Startup Error [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯⎯[39m
+Error: Build failed with 1 error:
+tsconfig.json:4:0: ERROR: Expected string in JSON but found "<<"
+    at failureErrorWithLog (D:\Dropship\node_modules\esbuild\lib\main.js:1467:15)
+    at D:\Dropship\node_modules\esbuild\lib\main.js:926:25
+    at runOnEndCallbacks (D:\Dropship\node_modules\esbuild\lib\main.js:1307:45)
+    at buildResponseToResult (D:\Dropship\node_modules\esbuild\lib\main.js:924:7)
+    at D:\Dropship\node_modules\esbuild\lib\main.js:951:16
+    at responseCallbacks.<computed> (D:\Dropship\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (D:\Dropship\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (D:\Dropship\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+
+
