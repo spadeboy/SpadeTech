@@ -7,12 +7,12 @@ describe('Home', () => {
         render(<Home />)
         const heading = screen.getByRole('heading', { level: 1 })
         expect(heading).toBeDefined()
-        expect(heading.textContent).toContain('NOTHING')
+        expect(heading.textContent).toContain('SPADE TECH')
     })
 
     it('renders the product catalog section', () => {
         render(<Home />)
-        const catalogHeading = screen.getByText(/LATEST ARRIVALS/i)
+        const catalogHeading = screen.getByText(/LATEST DROPS/i)
         expect(catalogHeading).toBeDefined()
     })
 })

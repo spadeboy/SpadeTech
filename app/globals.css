@@ -7,12 +7,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #0f0f0f;
-  --foreground: #f0f0f0;
-  --accent: #d71921;
-  /* Nothing Red */
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #000000;
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --card-bg: #f5f5f5;
 }
 
 * {
@@ -43,22 +43,23 @@ body {
     font-family: "Share Tech Mono", monospace;
   }
 
-  /* Refined Glass Panel */
+  /* Refined Glass Panel for Light Mode */
   .glass-panel {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background-color: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
-    /* Minimalist radius */
   }
 
   /* Minimalist Pill */
   .glass-pill {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background-color: rgba(20, 20, 20, 0.8);
-    border: 1px solid var(--glass-border);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     border-radius: 999px;
   }
 
@@ -79,14 +80,9 @@ body {
   }
 
   .hover-glow:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  /* Noise Texture (Optional, keep it subtle) */
-  .bg-noise {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -100,10 +96,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #ccc;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #999;
 }
