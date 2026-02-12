@@ -55,9 +55,13 @@ export default function Store() {
                                     <div className="absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100">
                                         {item.tag}
                                     </div>
-                                    <div className="w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2 break-all overflow-hidden">
+                                    <div className="w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2 break-all overflow-hidden relative">
                                         {item.image ? (
-                                            <span className="text-xs">IMG_LINKED</span>
+                                            <img
+                                                src={item.image}
+                                                alt={item.name}
+                                                className="w-full h-full object-cover rounded-full opacity-80 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0"
+                                            />
                                         ) : (
                                             item.name.split(' ')[0]
                                         )}
