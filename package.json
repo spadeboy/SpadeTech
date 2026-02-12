@@ -6,12 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
-    "lint": "next lint"
-=======
     "lint": "next lint",
     "test": "vitest"
->>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
   },
   "dependencies": {
     "@react-three/drei": "^9.90.0",
@@ -27,22 +23,15 @@
     "three": "^0.160.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.2",
->>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@types/three": "^0.160.0",
-<<<<<<< HEAD
-    "typescript": "^5.0.0"
-=======
     "@vitejs/plugin-react": "^5.1.4",
     "jsdom": "^27.0.1",
     "typescript": "^5.0.0",
     "vitest": "^3.2.4"
->>>>>>> 119076a (refactor: redesign dropshipping site with minimalist nothing-style aesthetic, add vitest, fix lint errors)
   }
 }
