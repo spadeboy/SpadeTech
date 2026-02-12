@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "A futuristic 3D e-commerce experience with industrial minimalist design",
 };
 
+import { CartProvider } from "@/context/CartContext";
+
 export default function RootLayout({
   children,
 }: {
@@ -14,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#0a0a0a] text-white overflow-x-hidden">
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

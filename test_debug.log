@@ -21,3 +21,2927 @@
 
 [1m[42m PASS [49m[22m [32mWaiting for file changes...[39m
        [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2mcomponents/Navbar.tsx [22m[39m
+
+(node:4960) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12360) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders the store heading
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders product items
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 47[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders the store heading[39m[32m 39[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 6[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[90mstderr[2m | __tests__/Home.test.tsx[2m > [22m[2mHome[2m > [22m[2mrenders the main heading
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Navbar> component:
+
+    at Navbar (D:\Dropship\components\Navbar.tsx:17:58)
+    at main
+    at Home
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | __tests__/Home.test.tsx[2m > [22m[2mHome[2m > [22m[2mrenders the product catalog section
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Navbar> component:
+
+    at Navbar (D:\Dropship\components\Navbar.tsx:17:58)
+    at main
+    at Home
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [31m❯[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 174[2mms[22m[39m
+[31m   [31m×[31m Home[2m > [22mrenders the main heading[39m[32m 129[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Home[2m > [22mrenders the product catalog section[39m[32m 43[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 4 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/Home.test.tsx[2m > [22mHome[2m > [22mrenders the main heading
+[41m[1m FAIL [22m[49m __tests__/Home.test.tsx[2m > [22mHome[2m > [22mrenders the product catalog section
+[31m[1mError[22m: useCart must be used within a CartProvider[39m
+[36m [2m❯[22m useCart context/CartContext.tsx:[2m105:15[22m[39m
+    [90m103| [39m    [35mconst[39m context [33m=[39m [34museContext[39m([33mCartContext[39m)[33m;[39m
+    [90m104| [39m    [35mif[39m (context [33m===[39m undefined) {
+    [90m105| [39m        [35mthrow[39m [35mnew[39m [33mError[39m([32m'useCart must be used within a CartProvider'[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m106| [39m    }
+    [90m107| [39m    [35mreturn[39m context[33m;[39m
+[90m [2m❯[22m Navbar components/Navbar.tsx:[2m13:25[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2m❯[22m mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:[2m20103:13[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21626:16[22m[39m
+[90m [2m❯[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2m❯[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders the store heading
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders product items
+[31m[1mError[22m: useCart must be used within a CartProvider[39m
+[36m [2m❯[22m useCart context/CartContext.tsx:[2m105:15[22m[39m
+    [90m103| [39m    [35mconst[39m context [33m=[39m [34museContext[39m([33mCartContext[39m)[33m;[39m
+    [90m104| [39m    [35mif[39m (context [33m===[39m undefined) {
+    [90m105| [39m        [35mthrow[39m [35mnew[39m [33mError[39m([32m'useCart must be used within a CartProvider'[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m106| [39m    }
+    [90m107| [39m    [35mreturn[39m context[33m;[39m
+[90m [2m❯[22m Store app/store/page.tsx:[2m10:27[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2m❯[22m mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:[2m20103:13[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21626:16[22m[39m
+[90m [2m❯[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2m❯[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[90m (4)[39m
+[2m   Start at [22m 23:08:42
+[2m   Duration [22m 2.38s
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2mapp/store/page.tsx [22m[34mx2 [34m[39m
+
+ [31m❯[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 174[2mms[22m[39m
+[31m   [31m×[31m Home[2m > [22mrenders the main heading[39m[32m 129[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Home[2m > [22mrenders the product catalog section[39m[32m 43[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+(node:11060) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders the store heading
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders product items
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 33[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders the store heading[39m[32m 28[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 3[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 2 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders the store heading
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders product items
+[31m[1mError[22m: useCart must be used within a CartProvider[39m
+[36m [2m❯[22m useCart context/CartContext.tsx:[2m105:15[22m[39m
+    [90m103| [39m    [35mconst[39m context [33m=[39m [34museContext[39m([33mCartContext[39m)[33m;[39m
+    [90m104| [39m    [35mif[39m (context [33m===[39m undefined) {
+    [90m105| [39m        [35mthrow[39m [35mnew[39m [33mError[39m([32m'useCart must be used within a CartProvider'[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m106| [39m    }
+    [90m107| [39m    [35mreturn[39m context[33m;[39m
+[90m [2m❯[22m Store app/store/page.tsx:[2m10:27[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2m❯[22m mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:[2m20103:13[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21626:16[22m[39m
+[90m [2m❯[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2m❯[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[90m (4)[39m
+[2m   Start at [22m 23:08:46
+[2m   Duration [22m 553ms
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/CartIntegration.test.tsx [22m[34mx1 [34m[39m
+
+ [31m❯[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 174[2mms[22m[39m
+[31m   [31m×[31m Home[2m > [22mrenders the main heading[39m[32m 129[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Home[2m > [22mrenders the product catalog section[39m[32m 43[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 33[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders the store heading[39m[32m 28[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 3[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+(node:28356) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90mstderr[2m | __tests__/CartIntegration.test.tsx[2m > [22m[2mCart Integration[2m > [22m[2mdisplays empty cart message initially
+[22m[39mNot implemented: Window's scrollTo() method
+
+ [31m❯[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 252[2mms[22m[39m
+   [32m✓[39m Cart Integration[2m > [22madds items to cart and updates badge[32m 137[2mms[22m[39m
+[31m   [31m×[31m Cart Integration[2m > [22mdisplays empty cart message initially[39m[32m 113[2mms[22m[39m
+[31m     → Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<h1[31m
+          [33mclass[31m=[32m"font-dot text-4xl font-bold mb-12"[31m
+        [36m>[31m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-2 space-y-6"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[31m
+              [33mstyle[31m=[32m"opacity: 0; height: auto;"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex-1"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<h3[31m
+                    [33mclass[31m=[32m"font-bold"[31m
+                  [36m>[31m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<p[31m
+                  [33mclass[31m=[32m"text-xs text-neutral-500 mt-1"[31m
+                [36m>[31m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between items-center mt-4"[31m
+                [36m>[31m
+                  [36m<div[31m
+                    [33mclass[31m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[31m
+                  [36m>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m-[0m
+                    [36m</button>[31m
+                    [36m<span[31m
+                      [33mclass[31m=[32m"font-tech text-sm w-4 text-center"[31m
+                    [36m>[31m
+                      [0m1[0m
+                    [36m</span>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m+[0m
+                    [36m</button>[31m
+                  [36m</div>[31m
+                  [36m<button[31m
+                    [33mclass[31m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[31m
+                  [36m>[31m
+                    [0mREMOVE[0m
+                  [36m</button>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-1"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[31m
+            [36m>[31m
+              [36m<h2[31m
+                [33mclass[31m=[32m"font-bold mb-6"[31m
+              [36m>[31m
+                [0mSUMMARY[0m
+              [36m</h2>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"space-y-4 text-sm mb-8"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mSubtotal[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mShipping[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0mFREE[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[31m
+              [36m>[31m
+                [36m<span>[31m
+                  [0mTOTAL[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[31m
+              [36m>[31m
+                [0mCHECKOUT[0m
+              [36m</button>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-[10px] text-center mt-4 text-neutral-400"[31m
+              [36m>[31m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[31m
+          [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+        [36m>[31m
+          [36m<a[31m
+            [33mhref[31m=[32m"/"[31m
+        ...[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/CartIntegration.test.tsx[2m > [22mCart Integration[2m > [22mdisplays empty cart message initially
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[39m
+      [36m/>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"font-dot text-4xl font-bold mb-12"[39m
+        [36m>[39m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-2 space-y-6"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[39m
+              [33mstyle[39m=[32m"opacity: 0; height: auto;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[39m
+              [36m>[39m
+                [0mPOWER[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex-1"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<h3[39m
+                    [33mclass[39m=[32m"font-bold"[39m
+                  [36m>[39m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"text-xs text-neutral-500 mt-1"[39m
+                [36m>[39m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between items-center mt-4"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m-[0m
+                    [36m</button>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"font-tech text-sm w-4 text-center"[39m
+                    [36m>[39m
+                      [0m1[0m
+                    [36m</span>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m+[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[39m
+                  [36m>[39m
+                    [0mREMOVE[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-1"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"font-bold mb-6"[39m
+              [36m>[39m
+                [0mSUMMARY[0m
+              [36m</h2>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"space-y-4 text-sm mb-8"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mSubtotal[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mShipping[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0mFREE[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[39m
+              [36m>[39m
+                [36m<span>[39m
+                  [0mTOTAL[0m
+                [36m</span>[39m
+                [36m<span>[39m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[39m
+              [36m>[39m
+                [0mCHECKOUT[0m
+              [36m</button>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-[10px] text-center mt-4 text-neutral-400"[39m
+              [36m>[39m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[39m
+          [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mhref[39m=[32m"/"[39m
+        ...
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m __tests__/CartIntegration.test.tsx:[2m50:23[22m[39m
+    [90m 48| [39m    [34mit[39m([32m'displays empty cart message initially'[39m[33m,[39m () [33m=>[39m {
+    [90m 49| [39m        [34mrenderWithProvider[39m([33m<[39m[33mCart[39m [33m/[39m[33m>[39m)
+    [90m 50| [39m        [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'YOUR CART IS EMPTY'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m   | [39m                      [31m^[39m
+    [90m 51| [39m    })
+    [90m 52| [39m})
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m3 failed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[31m5 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 23:09:12
+[2m   Duration [22m 785ms
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2mvitest.setup.ts [22m[39m
+
+(node:31532) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23340) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21124) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders the store heading
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | __tests__/Store.test.tsx[2m > [22m[2mStore[2m > [22m[2mrenders product items
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Store (D:\Dropship\app\store\page.tsx:10:27)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Store> component:
+
+    at Store (D:\Dropship\app\store\page.tsx:14:58)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 55[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders the store heading[39m[32m 43[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 9[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[90mstderr[2m | __tests__/Home.test.tsx[2m > [22m[2mHome[2m > [22m[2mrenders the main heading
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Navbar> component:
+
+    at Navbar (D:\Dropship\components\Navbar.tsx:17:58)
+    at main
+    at Home
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+[90mstderr[2m | __tests__/Home.test.tsx[2m > [22m[2mHome[2m > [22m[2mrenders the product catalog section
+[22m[39mError: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+Error: useCart must be used within a CartProvider
+    at useCart (D:\Dropship\context\CartContext.tsx:105:15)
+    at Navbar (D:\Dropship\components\Navbar.tsx:13:25)
+    at renderWithHooks (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:20103:13)
+    at beginWork (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:21626:16)
+    at HTMLUnknownElement.callCallback (D:\Dropship\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (D:\Dropship\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+    at innerInvokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:360:16)
+    at invokeEventListeners (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:296:3)
+    at HTMLUnknownElementImpl._dispatch (D:\Dropship\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:243:9)
+The above error occurred in the <Navbar> component:
+
+    at Navbar (D:\Dropship\components\Navbar.tsx:17:58)
+    at main
+    at Home
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [31m❯[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 196[2mms[22m[39m
+[31m   [31m×[31m Home[2m > [22mrenders the main heading[39m[32m 157[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Home[2m > [22mrenders the product catalog section[39m[32m 37[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+ [31m❯[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 426[2mms[22m[39m
+   [32m✓[39m Cart Integration[2m > [22madds items to cart and updates badge[32m 224[2mms[22m[39m
+[31m   [31m×[31m Cart Integration[2m > [22mdisplays empty cart message initially[39m[32m 200[2mms[22m[39m
+[31m     → Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<h1[31m
+          [33mclass[31m=[32m"font-dot text-4xl font-bold mb-12"[31m
+        [36m>[31m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-2 space-y-6"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[31m
+              [33mstyle[31m=[32m"opacity: 0; height: auto;"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex-1"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<h3[31m
+                    [33mclass[31m=[32m"font-bold"[31m
+                  [36m>[31m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<p[31m
+                  [33mclass[31m=[32m"text-xs text-neutral-500 mt-1"[31m
+                [36m>[31m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between items-center mt-4"[31m
+                [36m>[31m
+                  [36m<div[31m
+                    [33mclass[31m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[31m
+                  [36m>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m-[0m
+                    [36m</button>[31m
+                    [36m<span[31m
+                      [33mclass[31m=[32m"font-tech text-sm w-4 text-center"[31m
+                    [36m>[31m
+                      [0m1[0m
+                    [36m</span>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m+[0m
+                    [36m</button>[31m
+                  [36m</div>[31m
+                  [36m<button[31m
+                    [33mclass[31m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[31m
+                  [36m>[31m
+                    [0mREMOVE[0m
+                  [36m</button>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-1"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[31m
+            [36m>[31m
+              [36m<h2[31m
+                [33mclass[31m=[32m"font-bold mb-6"[31m
+              [36m>[31m
+                [0mSUMMARY[0m
+              [36m</h2>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"space-y-4 text-sm mb-8"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mSubtotal[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mShipping[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0mFREE[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[31m
+              [36m>[31m
+                [36m<span>[31m
+                  [0mTOTAL[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[31m
+              [36m>[31m
+                [0mCHECKOUT[0m
+              [36m</button>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-[10px] text-center mt-4 text-neutral-400"[31m
+              [36m>[31m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[31m
+          [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+        [36m>[31m
+          [36m<a[31m
+            [33mhref[31m=[32m"/"[31m
+        ...[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 5 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/Home.test.tsx[2m > [22mHome[2m > [22mrenders the main heading
+[41m[1m FAIL [22m[49m __tests__/Home.test.tsx[2m > [22mHome[2m > [22mrenders the product catalog section
+[31m[1mError[22m: useCart must be used within a CartProvider[39m
+[36m [2m❯[22m useCart context/CartContext.tsx:[2m105:15[22m[39m
+    [90m103| [39m    [35mconst[39m context [33m=[39m [34museContext[39m([33mCartContext[39m)[33m;[39m
+    [90m104| [39m    [35mif[39m (context [33m===[39m undefined) {
+    [90m105| [39m        [35mthrow[39m [35mnew[39m [33mError[39m([32m'useCart must be used within a CartProvider'[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m106| [39m    }
+    [90m107| [39m    [35mreturn[39m context[33m;[39m
+[90m [2m❯[22m Navbar components/Navbar.tsx:[2m13:25[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2m❯[22m mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:[2m20103:13[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21626:16[22m[39m
+[90m [2m❯[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2m❯[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders the store heading
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders product items
+[31m[1mError[22m: useCart must be used within a CartProvider[39m
+[36m [2m❯[22m useCart context/CartContext.tsx:[2m105:15[22m[39m
+    [90m103| [39m    [35mconst[39m context [33m=[39m [34museContext[39m([33mCartContext[39m)[33m;[39m
+    [90m104| [39m    [35mif[39m (context [33m===[39m undefined) {
+    [90m105| [39m        [35mthrow[39m [35mnew[39m [33mError[39m([32m'useCart must be used within a CartProvider'[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m106| [39m    }
+    [90m107| [39m    [35mreturn[39m context[33m;[39m
+[90m [2m❯[22m Store app/store/page.tsx:[2m10:27[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:[2m15486:18[22m[39m
+[90m [2m❯[22m mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:[2m20103:13[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom.development.js:[2m21626:16[22m[39m
+[90m [2m❯[22m beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:[2m27465:14[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:[2m26599:12[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom.development.js:[2m26505:5[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom.development.js:[2m26473:7[22m[39m
+[90m [2m❯[22m recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:[2m25889:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m __tests__/CartIntegration.test.tsx[2m > [22mCart Integration[2m > [22mdisplays empty cart message initially
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[39m
+      [36m/>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"font-dot text-4xl font-bold mb-12"[39m
+        [36m>[39m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-2 space-y-6"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[39m
+              [33mstyle[39m=[32m"opacity: 0; height: auto;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[39m
+              [36m>[39m
+                [0mPOWER[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex-1"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<h3[39m
+                    [33mclass[39m=[32m"font-bold"[39m
+                  [36m>[39m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"text-xs text-neutral-500 mt-1"[39m
+                [36m>[39m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between items-center mt-4"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m-[0m
+                    [36m</button>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"font-tech text-sm w-4 text-center"[39m
+                    [36m>[39m
+                      [0m1[0m
+                    [36m</span>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m+[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[39m
+                  [36m>[39m
+                    [0mREMOVE[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-1"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"font-bold mb-6"[39m
+              [36m>[39m
+                [0mSUMMARY[0m
+              [36m</h2>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"space-y-4 text-sm mb-8"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mSubtotal[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mShipping[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0mFREE[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[39m
+              [36m>[39m
+                [36m<span>[39m
+                  [0mTOTAL[0m
+                [36m</span>[39m
+                [36m<span>[39m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[39m
+              [36m>[39m
+                [0mCHECKOUT[0m
+              [36m</button>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-[10px] text-center mt-4 text-neutral-400"[39m
+              [36m>[39m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[39m
+          [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mhref[39m=[32m"/"[39m
+        ...
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m __tests__/CartIntegration.test.tsx:[2m50:23[22m[39m
+    [90m 48| [39m    [34mit[39m([32m'displays empty cart message initially'[39m[33m,[39m () [33m=>[39m {
+    [90m 49| [39m        [34mrenderWithProvider[39m([33m<[39m[33mCart[39m [33m/[39m[33m>[39m)
+    [90m 50| [39m        [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'YOUR CART IS EMPTY'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m   | [39m                      [31m^[39m
+    [90m 51| [39m    })
+    [90m 52| [39m})
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m3 failed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[31m5 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 23:10:07
+[2m   Duration [22m 4.67s
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/Home.test.tsx [22m[34mx3 [34m[39m
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 55[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders the store heading[39m[32m 43[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 9[2mms[22m[39m
+[31m     → useCart must be used within a CartProvider[39m
+ [31m❯[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 426[2mms[22m[39m
+   [32m✓[39m Cart Integration[2m > [22madds items to cart and updates badge[32m 224[2mms[22m[39m
+[31m   [31m×[31m Cart Integration[2m > [22mdisplays empty cart message initially[39m[32m 200[2mms[22m[39m
+[31m     → Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<h1[31m
+          [33mclass[31m=[32m"font-dot text-4xl font-bold mb-12"[31m
+        [36m>[31m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-2 space-y-6"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[31m
+              [33mstyle[31m=[32m"opacity: 0; height: auto;"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex-1"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<h3[31m
+                    [33mclass[31m=[32m"font-bold"[31m
+                  [36m>[31m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<p[31m
+                  [33mclass[31m=[32m"text-xs text-neutral-500 mt-1"[31m
+                [36m>[31m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between items-center mt-4"[31m
+                [36m>[31m
+                  [36m<div[31m
+                    [33mclass[31m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[31m
+                  [36m>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m-[0m
+                    [36m</button>[31m
+                    [36m<span[31m
+                      [33mclass[31m=[32m"font-tech text-sm w-4 text-center"[31m
+                    [36m>[31m
+                      [0m1[0m
+                    [36m</span>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m+[0m
+                    [36m</button>[31m
+                  [36m</div>[31m
+                  [36m<button[31m
+                    [33mclass[31m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[31m
+                  [36m>[31m
+                    [0mREMOVE[0m
+                  [36m</button>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-1"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[31m
+            [36m>[31m
+              [36m<h2[31m
+                [33mclass[31m=[32m"font-bold mb-6"[31m
+              [36m>[31m
+                [0mSUMMARY[0m
+              [36m</h2>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"space-y-4 text-sm mb-8"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mSubtotal[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mShipping[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0mFREE[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[31m
+              [36m>[31m
+                [36m<span>[31m
+                  [0mTOTAL[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[31m
+              [36m>[31m
+                [0mCHECKOUT[0m
+              [36m</button>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-[10px] text-center mt-4 text-neutral-400"[31m
+              [36m>[31m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[31m
+          [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+        [36m>[31m
+          [36m<a[31m
+            [33mhref[31m=[32m"/"[31m
+        ...[39m
+(node:5828) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [32m✓[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 201[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m3 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 23:10:59
+[2m   Duration [22m 719ms
+
+[1m[42m PASS [49m[22m [32mWaiting for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/Store.test.tsx [22m[34mx4 [34m[39m
+
+ [31m❯[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 426[2mms[22m[39m
+   [32m✓[39m Cart Integration[2m > [22madds items to cart and updates badge[32m 224[2mms[22m[39m
+[31m   [31m×[31m Cart Integration[2m > [22mdisplays empty cart message initially[39m[32m 200[2mms[22m[39m
+[31m     → Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<h1[31m
+          [33mclass[31m=[32m"font-dot text-4xl font-bold mb-12"[31m
+        [36m>[31m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-2 space-y-6"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[31m
+              [33mstyle[31m=[32m"opacity: 0; height: auto;"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex-1"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<h3[31m
+                    [33mclass[31m=[32m"font-bold"[31m
+                  [36m>[31m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<p[31m
+                  [33mclass[31m=[32m"text-xs text-neutral-500 mt-1"[31m
+                [36m>[31m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between items-center mt-4"[31m
+                [36m>[31m
+                  [36m<div[31m
+                    [33mclass[31m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[31m
+                  [36m>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m-[0m
+                    [36m</button>[31m
+                    [36m<span[31m
+                      [33mclass[31m=[32m"font-tech text-sm w-4 text-center"[31m
+                    [36m>[31m
+                      [0m1[0m
+                    [36m</span>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m+[0m
+                    [36m</button>[31m
+                  [36m</div>[31m
+                  [36m<button[31m
+                    [33mclass[31m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[31m
+                  [36m>[31m
+                    [0mREMOVE[0m
+                  [36m</button>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-1"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[31m
+            [36m>[31m
+              [36m<h2[31m
+                [33mclass[31m=[32m"font-bold mb-6"[31m
+              [36m>[31m
+                [0mSUMMARY[0m
+              [36m</h2>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"space-y-4 text-sm mb-8"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mSubtotal[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mShipping[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0mFREE[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[31m
+              [36m>[31m
+                [36m<span>[31m
+                  [0mTOTAL[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[31m
+              [36m>[31m
+                [0mCHECKOUT[0m
+              [36m</button>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-[10px] text-center mt-4 text-neutral-400"[31m
+              [36m>[31m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[31m
+          [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+        [36m>[31m
+          [36m<a[31m
+            [33mhref[31m=[32m"/"[31m
+        ...[39m
+(node:31324) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 223[2mms[22m[39m
+   [32m✓[39m Store[2m > [22mrenders the store heading[32m 170[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 51[2mms[22m[39m
+[31m     → Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<header[31m
+          [33mclass[31m=[32m"mb-12"[31m
+        [36m>[31m
+          [36m<h1[31m
+            [33mclass[31m=[32m"font-dot text-5xl font-bold mb-4"[31m
+          [36m>[31m
+            [0mSTORE[0m
+          [36m</h1>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"font-tech text-neutral-500"[31m
+          [36m>[31m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[31m
+        [36m</header>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mCYBERBANK[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mAUDIO[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mMECHA[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mACCESSORY[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders product items
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[39m
+      [36m/>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[39m
+      [36m>[39m
+        [36m<header[39m
+          [33mclass[39m=[32m"mb-12"[39m
+        [36m>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"font-dot text-5xl font-bold mb-4"[39m
+          [36m>[39m
+            [0mSTORE[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"font-tech text-neutral-500"[39m
+          [36m>[39m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[39m
+        [36m</header>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mPOWER[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[39m
+              [36m>[39m
+                [0mCYBERBANK[0m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+              [36m>[39m
+                [36m<h3[39m
+                  [33mclass[39m=[32m"font-bold text-lg"[39m
+                [36m>[39m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"font-tech text-neutral-600"[39m
+                [36m>[39m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[39m
+              [36m>[39m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[39m
+              [36m>[39m
+                [0mADD TO CART[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mAUDIO[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[39m
+              [36m>[39m
+                [0mMECHA[0m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+              [36m>[39m
+                [36m<h3[39m
+                  [33mclass[39m=[32m"font-bold text-lg"[39m
+                [36m>[39m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"font-tech text-neutral-600"[39m
+                [36m>[39m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[39m
+              [36m>[39m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[39m
+              [36m>[39m
+                [0mADD TO CART[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mACCESSORY[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m __tests__/Store.test.tsx:[2m16:32[22m[39m
+    [90m 14| [39m    [34mit[39m([32m'renders product items'[39m[33m,[39m () [33m=>[39m {
+    [90m 15| [39m        [34mrenderWithProvider[39m([33m<[39m[33mStore[39m [33m/[39m[33m>[39m)
+    [90m 16| [39m        [35mconst[39m product [33m=[39m screen[33m.[39m[34mgetByText[39m([36m/SPADE PHONE/i[39m)
+    [90m   | [39m                               [31m^[39m
+    [90m 17| [39m        [34mexpect[39m(product)[33m.[39m[34mtoBeDefined[39m()
+    [90m 18| [39m    })
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 23:11:03
+[2m   Duration [22m 721ms
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/CartIntegration.test.tsx [22m[34mx3 [34m[39m
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 223[2mms[22m[39m
+   [32m✓[39m Store[2m > [22mrenders the store heading[32m 170[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 51[2mms[22m[39m
+[31m     → Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<header[31m
+          [33mclass[31m=[32m"mb-12"[31m
+        [36m>[31m
+          [36m<h1[31m
+            [33mclass[31m=[32m"font-dot text-5xl font-bold mb-4"[31m
+          [36m>[31m
+            [0mSTORE[0m
+          [36m</h1>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"font-tech text-neutral-500"[31m
+          [36m>[31m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[31m
+        [36m</header>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mCYBERBANK[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mAUDIO[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mMECHA[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mACCESSORY[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...[39m
+(node:31688) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [31m❯[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 264[2mms[22m[39m
+   [32m✓[39m Cart Integration[2m > [22madds items to cart and updates badge[32m 139[2mms[22m[39m
+[31m   [31m×[31m Cart Integration[2m > [22mdisplays empty cart message initially[39m[32m 122[2mms[22m[39m
+[31m     → Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<h1[31m
+          [33mclass[31m=[32m"font-dot text-4xl font-bold mb-12"[31m
+        [36m>[31m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-2 space-y-6"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[31m
+              [33mstyle[31m=[32m"opacity: 0; height: auto;"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex-1"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<h3[31m
+                    [33mclass[31m=[32m"font-bold"[31m
+                  [36m>[31m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<p[31m
+                  [33mclass[31m=[32m"text-xs text-neutral-500 mt-1"[31m
+                [36m>[31m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between items-center mt-4"[31m
+                [36m>[31m
+                  [36m<div[31m
+                    [33mclass[31m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[31m
+                  [36m>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m-[0m
+                    [36m</button>[31m
+                    [36m<span[31m
+                      [33mclass[31m=[32m"font-tech text-sm w-4 text-center"[31m
+                    [36m>[31m
+                      [0m1[0m
+                    [36m</span>[31m
+                    [36m<button[31m
+                      [33mclass[31m=[32m"text-neutral-400 hover:text-black px-2"[31m
+                    [36m>[31m
+                      [0m+[0m
+                    [36m</button>[31m
+                  [36m</div>[31m
+                  [36m<button[31m
+                    [33mclass[31m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[31m
+                  [36m>[31m
+                    [0mREMOVE[0m
+                  [36m</button>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"md:col-span-1"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[31m
+            [36m>[31m
+              [36m<h2[31m
+                [33mclass[31m=[32m"font-bold mb-6"[31m
+              [36m>[31m
+                [0mSUMMARY[0m
+              [36m</h2>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"space-y-4 text-sm mb-8"[31m
+              [36m>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mSubtotal[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+                [36m<div[31m
+                  [33mclass[31m=[32m"flex justify-between"[31m
+                [36m>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"text-neutral-500"[31m
+                  [36m>[31m
+                    [0mShipping[0m
+                  [36m</span>[31m
+                  [36m<span[31m
+                    [33mclass[31m=[32m"font-tech"[31m
+                  [36m>[31m
+                    [0mFREE[0m
+                  [36m</span>[31m
+                [36m</div>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[31m
+              [36m>[31m
+                [36m<span>[31m
+                  [0mTOTAL[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[31m
+              [36m>[31m
+                [0mCHECKOUT[0m
+              [36m</button>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-[10px] text-center mt-4 text-neutral-400"[31m
+              [36m>[31m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[31m
+          [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+        [36m>[31m
+          [36m<a[31m
+            [33mhref[31m=[32m"/"[31m
+        ...[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/CartIntegration.test.tsx[2m > [22mCart Integration[2m > [22mdisplays empty cart message initially
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: YOUR CART IS EMPTY. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[39m
+      [36m/>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"relative z-10 max-w-4xl mx-auto px-6 pt-24"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"font-dot text-4xl font-bold mb-12"[39m
+        [36m>[39m
+          [0mCART ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-12"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-2 space-y-6"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"flex gap-4 p-4 border border-neutral-100 rounded-lg bg-neutral-50"[39m
+              [33mstyle[39m=[32m"opacity: 0; height: auto;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-24 h-24 bg-white border border-neutral-200 flex items-center justify-center font-dot text-neutral-300"[39m
+              [36m>[39m
+                [0mPOWER[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex-1"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<h3[39m
+                    [33mclass[39m=[32m"font-bold"[39m
+                  [36m>[39m
+                    [0mCYBERBANK 20K[0m
+                  [36m</h3>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"text-xs text-neutral-500 mt-1"[39m
+                [36m>[39m
+                  [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between items-center mt-4"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center gap-3 bg-white border border-neutral-200 rounded px-2 py-1"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m-[0m
+                    [36m</button>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"font-tech text-sm w-4 text-center"[39m
+                    [36m>[39m
+                      [0m1[0m
+                    [36m</span>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"text-neutral-400 hover:text-black px-2"[39m
+                    [36m>[39m
+                      [0m+[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"text-xs font-tech underline text-neutral-400 hover:text-red-600 transition-colors"[39m
+                  [36m>[39m
+                    [0mREMOVE[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"md:col-span-1"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border border-neutral-200 rounded-lg bg-white sticky top-24"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"font-bold mb-6"[39m
+              [36m>[39m
+                [0mSUMMARY[0m
+              [36m</h2>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"space-y-4 text-sm mb-8"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mSubtotal[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0m$[0m
+                    [0m89.00[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"text-neutral-500"[39m
+                  [36m>[39m
+                    [0mShipping[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"font-tech"[39m
+                  [36m>[39m
+                    [0mFREE[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"pt-4 border-t border-neutral-100 flex justify-between font-bold text-lg mb-8"[39m
+              [36m>[39m
+                [36m<span>[39m
+                  [0mTOTAL[0m
+                [36m</span>[39m
+                [36m<span>[39m
+                  [0m$[0m
+                  [0m89.00[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-4 bg-black text-white font-bold rounded hover:bg-neutral-800 transition-colors"[39m
+              [36m>[39m
+                [0mCHECKOUT[0m
+              [36m</button>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-[10px] text-center mt-4 text-neutral-400"[39m
+              [36m>[39m
+                [0mSECURE ENCRYPTED CHECKOUT[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"glass-pill p-3 flex items-center gap-2 shadow-2xl"[39m
+          [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mhref[39m=[32m"/"[39m
+        ...
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m __tests__/CartIntegration.test.tsx:[2m42:23[22m[39m
+    [90m 40| [39m    [34mit[39m([32m'displays empty cart message initially'[39m[33m,[39m () [33m=>[39m {
+    [90m 41| [39m        [34mrenderWithProvider[39m([33m<[39m[33mCart[39m [33m/[39m[33m>[39m)
+    [90m 42| [39m        [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'YOUR CART IS EMPTY'[39m))[33m.[39m[34mtoBeDefined[39m()
+    [90m   | [39m                      [31m^[39m
+    [90m 43| [39m    })
+    [90m 44| [39m})
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 23:11:05
+[2m   Duration [22m 801ms
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2mvitest.setup.ts [22m[39m
+
+(node:31296) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15584) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32204) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [32m✓[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[33m 431[2mms[22m[39m
+   [33m[2m✓[22m[39m Cart Integration[2m > [22madds items to cart and updates badge [33m 361[2mms[22m[39m
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 488[2mms[22m[39m
+   [33m[2m✓[22m[39m Store[2m > [22mrenders the store heading [33m 371[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 115[2mms[22m[39m
+[31m     → Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<header[31m
+          [33mclass[31m=[32m"mb-12"[31m
+        [36m>[31m
+          [36m<h1[31m
+            [33mclass[31m=[32m"font-dot text-5xl font-bold mb-4"[31m
+          [36m>[31m
+            [0mSTORE[0m
+          [36m</h1>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"font-tech text-neutral-500"[31m
+          [36m>[31m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[31m
+        [36m</header>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mCYBERBANK[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mAUDIO[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mMECHA[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mACCESSORY[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...[39m
+ [32m✓[39m __tests__/Home.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[33m 631[2mms[22m[39m
+   [33m[2m✓[22m[39m Home[2m > [22mrenders the main heading [33m 539[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m __tests__/Store.test.tsx[2m > [22mStore[2m > [22mrenders product items
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[39m
+      [36m/>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[39m
+      [36m>[39m
+        [36m<header[39m
+          [33mclass[39m=[32m"mb-12"[39m
+        [36m>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"font-dot text-5xl font-bold mb-4"[39m
+          [36m>[39m
+            [0mSTORE[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"font-tech text-neutral-500"[39m
+          [36m>[39m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[39m
+        [36m</header>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mPOWER[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[39m
+              [36m>[39m
+                [0mCYBERBANK[0m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+              [36m>[39m
+                [36m<h3[39m
+                  [33mclass[39m=[32m"font-bold text-lg"[39m
+                [36m>[39m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"font-tech text-neutral-600"[39m
+                [36m>[39m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[39m
+              [36m>[39m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[39m
+              [36m>[39m
+                [0mADD TO CART[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mAUDIO[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[39m
+              [36m>[39m
+                [0mMECHA[0m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+              [36m>[39m
+                [36m<h3[39m
+                  [33mclass[39m=[32m"font-bold text-lg"[39m
+                [36m>[39m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"font-tech text-neutral-600"[39m
+                [36m>[39m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[39m
+              [36m>[39m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[39m
+              [36m>[39m
+                [0mADD TO CART[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[39m
+              [36m>[39m
+                [0mACCESSORY[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m __tests__/Store.test.tsx:[2m16:32[22m[39m
+    [90m 14| [39m    [34mit[39m([32m'renders product items'[39m[33m,[39m () [33m=>[39m {
+    [90m 15| [39m        [34mrenderWithProvider[39m([33m<[39m[33mStore[39m [33m/[39m[33m>[39m)
+    [90m 16| [39m        [35mconst[39m product [33m=[39m screen[33m.[39m[34mgetByText[39m([36m/SPADE PHONE/i[39m)
+    [90m   | [39m                               [31m^[39m
+    [90m 17| [39m        [34mexpect[39m(product)[33m.[39m[34mtoBeDefined[39m()
+    [90m 18| [39m    })
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 23:13:55
+[2m   Duration [22m 6.79s
+
+[1m[41m FAIL [49m[22m [31mTests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/CartIntegration.test.tsx [22m[34mx5 [34m[39m
+
+ [31m❯[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 488[2mms[22m[39m
+   [33m[2m✓[22m[39m Store[2m > [22mrenders the store heading [33m 371[2mms[22m[39m
+[31m   [31m×[31m Store[2m > [22mrenders product items[39m[32m 115[2mms[22m[39m
+[31m     → Unable to find an element with the text: /SPADE PHONE/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150"[31m
+      [36m/>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"relative z-10 max-w-7xl mx-auto px-6 pt-24"[31m
+      [36m>[31m
+        [36m<header[31m
+          [33mclass[31m=[32m"mb-12"[31m
+        [36m>[31m
+          [36m<h1[31m
+            [33mclass[31m=[32m"font-dot text-5xl font-bold mb-4"[31m
+          [36m>[31m
+            [0mSTORE[0m
+          [36m</h1>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"font-tech text-neutral-500"[31m
+          [36m>[31m
+            [0mCYBERPUNK COLLECTION // SEASON_001[0m
+          [36m</p>[31m
+        [36m</header>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mPOWER[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mCYBERBANK[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mCYBERBANK 20K[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m89[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0m20,000mAh Transparent Power Bank. IPS Display. 130W Output.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mAUDIO[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2"[31m
+              [36m>[31m
+                [0mMECHA[0m
+              [36m</div>[31m
+            [36m</div>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"p-6 border-t border-neutral-200 flex flex-col flex-grow"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"flex justify-between items-start mb-2"[31m
+              [36m>[31m
+                [36m<h3[31m
+                  [33mclass[31m=[32m"font-bold text-lg"[31m
+                [36m>[31m
+                  [0mMECHA BUDS PRO[0m
+                [36m</h3>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"font-tech text-neutral-600"[31m
+                [36m>[31m
+                  [0m$[0m
+                  [0m149[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<p[31m
+                [33mclass[31m=[32m"text-sm text-neutral-500 mb-4 flex-grow"[31m
+              [36m>[31m
+                [0mTransparent ANC Earbuds. 45dB Noise Cancellation. RGB Case.[0m
+              [36m</p>[31m
+              [36m<button[31m
+                [33mclass[31m=[32m"w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform"[31m
+              [36m>[31m
+                [0mADD TO CART[0m
+              [36m</button>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"[31m
+            [33mstyle[31m=[32m"opacity: 0; transform: translateY(20px) translateZ(0);"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"aspect-square bg-neutral-50 relative flex items-center justify-center p-8"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100"[31m
+              [36m>[31m
+                [0mACCESSORY[0m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"w-40 h-40 rounded-full border border-dashed border-neutral-300 flex...[39m
+(node:32836) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [32m✓[39m __tests__/CartIntegration.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 273[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m3 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 23:14:00
+[2m   Duration [22m 940ms
+
+[1m[42m PASS [49m[22m [32mWaiting for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+c[3J[1m[44m RERUN [49m[22m [34m[2m__tests__/Store.test.tsx [22m[34mx6 [34m[39m
+
+(node:27120) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [32m✓[39m __tests__/Store.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 280[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m   Start at [22m 23:14:32
+[2m   Duration [22m 861ms
+
+[1m[42m PASS [49m[22m [32mWaiting for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m

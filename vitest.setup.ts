@@ -17,3 +17,10 @@ vi.mock('next/navigation', () => ({
         prefetch: vi.fn(),
     }),
 }))
+
+
+Object.defineProperty(window, 'scrollTo', { value: vi.fn(), writable: true });
+
+beforeEach(() => {
+    localStorage.clear();
+});

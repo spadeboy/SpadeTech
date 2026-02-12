@@ -6,15 +6,18 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { useCart } from "@/context/CartContext";
+
 const Navbar: React.FC = () => {
   const pathname = usePathname();
+  const { cartCount } = useCart();
 
   const navItems = [
     { id: "home", icon: Home, label: "Home", href: "/" },
     { id: "store", icon: Store, label: "Store", href: "/store" },
     { id: "search", icon: Search, label: "Search", href: "/search" },
     { id: "notifications", icon: Bell, label: "Alerts", href: "/notifications" },
-    { id: "cart", icon: ShoppingCart, label: "Cart", href: "/cart", badge: "3" },
+    { id: "cart", icon: ShoppingCart, label: "Cart", href: "/cart", badge: cartCount > 0 ? cartCount.toString() : undefined },
     { id: "profile", icon: User, label: "Profile", href: "/profile" },
   ];
 
