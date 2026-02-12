@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* Dot Matrix Font for Headers */
+@layer utilities {
+  .dot-matrix {
+    font-family: "DotGothic16", "Share Tech Mono", monospace;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+
+  /* Glass Panel Utility - Glassmorphism Effect */
+  .glass-panel {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+
+  /* Glass Pill for Navigation */
+  .glass-pill {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+  }
+
+  /* Nothing Brand Red Accent */
+  .nothing-red {
+    color: #d71921;
+  }
+
+  .text-nothing-red {
+    color: #d71921;
+  }
+
+  .border-nothing-red {
+    border-color: #d71921;
+  }
+
+  .bg-nothing-red {
+    background-color: #d71921;
+  }
+
+  /* Industrial styling */
+  .industrial-border {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hover glow effect */
+  .hover-glow {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-glow:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Tech-style text decoration */
+  .tech-text {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  /* Smooth fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
