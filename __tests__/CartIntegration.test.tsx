@@ -1,5 +1,5 @@
 import { screen, fireEvent } from '@testing-library/react'
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import Store from '../app/store/page'
 import Navbar from '../components/Navbar'
 import Cart from '../app/cart/page'
@@ -16,7 +16,25 @@ vi.mock('next/navigation', () => ({
 }))
 
 describe('Cart Integration', () => {
-    it('adds items to cart and updates badge', () => {
+    beforeEach(() => {
+        global.fetch = vi.fn(() =>
+            Promise.resolve({
+                json: () => Promise.resolve([
+                    {
+                        id: "p1",
+                        name: "CYBERBANK 20K",
+                        price: 89.00,
+                        tag: "POWER",
+                        description: "Test desc",
+                        specs: "130W",
+                        stock: 10
+                    }
+                ])
+            })
+        ) as any;
+    });
+
+    it('adds items to cart and updates badge', async () => {
         renderWithProvider(
             <>
                 <Navbar />
@@ -24,16 +42,15 @@ describe('Cart Integration', () => {
             </>
         )
 
-        // Find add to cart buttons
-        const addButtons = screen.getAllByText('ADD TO CART')
+        // Find add to cart buttons (wait for them to appear)
+        const addButtons = await screen.findAllByText('ADD TO CART')
         expect(addButtons.length).toBeGreaterThan(0)
 
         // Click first button
         fireEvent.click(addButtons[0])
 
         // Check if badge appears (Navbar update)
-        // Note: We might need to wait for state update or check text content
-        // Simpler check: store interaction doesn't crash
+        // Store interaction doesn't crash
         expect(screen.getAllByText('STORE').length).toBeGreaterThan(0)
     })
 

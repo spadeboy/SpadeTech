@@ -11,9 +11,28 @@ describe('Store', () => {
         expect(heading.textContent).toContain('STORE')
     })
 
-    it('renders product items', () => {
+
+    beforeEach(() => {
+        global.fetch = vi.fn(() =>
+            Promise.resolve({
+                json: () => Promise.resolve([
+                    {
+                        id: "p1",
+                        name: "CYBERBANK 20K",
+                        price: 89.00,
+                        tag: "POWER",
+                        description: "Test desc",
+                        specs: "130W",
+                        stock: 10
+                    }
+                ])
+            })
+        ) as any;
+    });
+
+    it('renders product items from api', async () => {
         renderWithProvider(<Store />)
-        const product = screen.getByText(/CYBERBANK 20K/i)
+        const product = await screen.findByText(/CYBERBANK 20K/i)
         expect(product).toBeDefined()
     })
 })

@@ -5,6 +5,9 @@ export interface Product {
     tag: string;
     description: string;
     image?: string;
+    specs?: string;
+    stock?: number;
+    rating?: number;
 }
 
 export const products: Product[] = [
