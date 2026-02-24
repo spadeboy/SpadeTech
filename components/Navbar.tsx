@@ -37,6 +37,9 @@ export default function Navbar() {
                     </div>
 
                     <div className="flex items-center gap-6 text-xs uppercase tracking-widest text-[#a3a3a3]">
+                        <Link href="/auth/signin" className="hover:text-white transition-colors uppercase tracking-widest hidden md:block group relative">
+                            [ SIGN IN ]
+                        </Link>
                         <button
                             onClick={() => setIsSearchOpen(true)}
                             className="hover:text-white transition-colors uppercase tracking-widest hidden md:block"
@@ -63,6 +66,7 @@ export default function Navbar() {
                         <Link href="/store" onClick={() => setIsMenuOpen(false)} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between"><span>01</span> STORE</Link>
                         <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between"><span>02</span> ABOUT</Link>
                         <button onClick={() => { setIsSearchOpen(true); setIsMenuOpen(false); }} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between uppercase"><span>03</span> SEARCH</button>
+                        <Link href="/auth/signin" onClick={() => setIsMenuOpen(false)} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between uppercase"><span>04</span> SIGN IN</Link>
                     </nav>
                 </div>
             )}
