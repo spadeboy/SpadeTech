@@ -1,97 +1,134 @@
-"use client";
+'use client'
 
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
-import { Product } from "@/data/products";
-import { useCart } from "@/context/CartContext";
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import productsData from '@/data/products.json';
 
-export default function Store() {
-    const { addToCart } = useCart();
-    const [products, setProducts] = useState<Product[]>([]);
-    const [loading, setLoading] = useState(true);
+// Assume 300 products in JSON
+const ALL_PRODUCTS = productsData;
+const ITEMS_PER_PAGE = 24;
+
+export default function StorePage() {
+    const [displayedProducts, setDisplayedProducts] = useState(ALL_PRODUCTS.slice(0, ITEMS_PER_PAGE));
+    const [page, setPage] = useState(1);
+    const [activeFilter, setActiveFilter] = useState('ALL');
+
+    const categories = ['ALL', ...Array.from(new Set(ALL_PRODUCTS.map(p => p.category)))];
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const res = await fetch('/api/products');
-                const data = await res.json();
-                setProducts(data);
-            } catch (error) {
-                console.error("Failed to load products", error);
-            } finally {
-                setLoading(false);
-            }
-        };
+        let filtered = ALL_PRODUCTS;
+        if (activeFilter !== 'ALL') {
+            filtered = ALL_PRODUCTS.filter(p => p.category === activeFilter);
+        }
+        setDisplayedProducts(filtered.slice(0, page * ITEMS_PER_PAGE));
+    }, [page, activeFilter]);
 
-        fetchProducts();
-    }, []);
+    const handleLoadMore = () => {
+        setPage(prev => prev + 1);
+    };
+
+    const handleFilter = (cat: string) => {
+        setActiveFilter(cat);
+        setPage(1); // Reset pagination on filter change
+    };
 
     return (
-        <main className="w-full min-h-screen bg-white text-black selection:bg-black selection:text-white pb-32">
-            <div className="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0 brightness-100 contrast-150" />
+        <div className="w-full px-6 md:px-12 py-16 text-[#c4c4c4] min-h-screen font-mono uppercase tracking-widest">
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="mb-24 flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 gap-8"
+            >
+                <div>
+                    <p className="text-xs mb-4">////// INVENTORY</p>
+                    <h1 className="text-5xl md:text-8xl font-black font-display text-white">
+                        CATALOG
+                    </h1>
+                </div>
+                <p className="text-xs max-w-sm">
+                    BROWSE OUR COMPLETE ARCHIVE OF METICULOUSLY DESIGNED ESSENTIALS FOR THE MODERN ERA.
+                </p>
+            </motion.div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24">
-                <header className="mb-12">
-                    <h1 className="font-dot text-5xl font-bold mb-4">STORE</h1>
-                    <p className="font-tech text-neutral-500">CYBERPUNK COLLECTION // SEASON_001</p>
-                </header>
-
-                {loading ? (
-                    <div className="flex items-center justify-center py-20">
-                        <div className="font-tech text-neutral-400 animate-pulse">LOADING CATALOG_DATA...</div>
+            <div className="flex flex-col md:flex-row gap-16">
+                {/* Filters sidebar */}
+                <motion.aside
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    className="w-full md:w-48 flex-shrink-0 text-xs text-[#a3a3a3]"
+                >
+                    <div className="sticky top-32 space-y-8">
+                        <div>
+                            <p className="mb-6 opacity-50">FILTER BY</p>
+                            <ul className="space-y-4">
+                                {categories.map(cat => (
+                                    <li key={cat}>
+                                        <button
+                                            onClick={() => handleFilter(cat)}
+                                            className={`transition-all block ${activeFilter === cat ? 'text-white flex items-center gap-2' : 'hover:text-white'}`}
+                                        >
+                                            {activeFilter === cat ? `┌ ${cat}` : `  ${cat}`}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map((item, i) => (
+                </motion.aside>
+
+                {/* Product Grid */}
+                <div className="flex-1">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1px bg-white/10 p-[1px] mb-12">
+                        {displayedProducts.map((product, i) => (
                             <motion.div
-                                key={item.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: i * 0.05 }}
-                                className="group cursor-pointer border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 rounded-lg overflow-hidden flex flex-col"
+                                key={product.id}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.3 }}
+                                className="bg-[#0a0a0a]"
                             >
-                                <div className="aspect-square bg-neutral-50 relative flex items-center justify-center p-8">
-                                    <div className="absolute top-4 left-4 font-tech text-[10px] bg-white px-2 py-1 rounded border border-neutral-100">
-                                        {item.tag}
+                                <Link href={`/store/${product.id}`} className="group flex flex-col h-full bg-[#0a0a0a] hover:bg-[#111] transition-colors duration-300 block relative overflow-hidden p-6 border border-transparent hover:border-white/20">
+                                    <div className="flex justify-between items-start mb-6 text-[10px] text-[#a3a3a3] z-10 relative">
+                                        <span>ID: {product.id.padStart(4, '0')}</span>
+                                        <span>{product.category}</span>
                                     </div>
-                                    <div className="w-40 h-40 rounded-full border border-dashed border-neutral-300 flex items-center justify-center text-neutral-300 font-dot text-2xl group-hover:border-black group-hover:text-black transition-colors text-center p-2 break-all overflow-hidden relative">
-                                        {item.image ? (
-                                            <img
-                                                src={item.image}
-                                                alt={item.name}
-                                                className="w-full h-full object-cover rounded-full opacity-80 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0"
-                                            />
-                                        ) : (
-                                            item.name.split(' ')[0]
-                                        )}
+
+                                    <div className="relative aspect-[4/5] mb-8 overflow-hidden bg-black filter grayscale transition-all duration-700 group-hover:grayscale-0">
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                        />
                                     </div>
-                                    {item.specs && (
-                                        <div className="absolute bottom-4 left-4 right-4 font-tech text-[10px] text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity text-center">
-                                            {item.specs}
-                                        </div>
-                                    )}
-                                </div>
-                                <div className="p-6 border-t border-neutral-200 flex flex-col flex-grow">
-                                    <div className="flex justify-between items-start mb-2">
-                                        <h3 className="font-bold text-lg leading-tight">{item.name}</h3>
-                                        <span className="font-tech text-neutral-600">${item.price}</span>
+
+                                    <div className="flex justify-between items-end z-10 relative mt-auto border-t border-white/10 pt-4">
+                                        <h3 className="text-sm text-white group-hover:text-white leading-tight font-display">{product.name}</h3>
+                                        <span className="text-sm text-white">${product.price}</span>
                                     </div>
-                                    <p className="text-sm text-neutral-500 mb-4 flex-grow line-clamp-3">{item.description}</p>
-                                    <button
-                                        onClick={() => addToCart(item)}
-                                        className="w-full py-3 bg-black text-white text-sm font-medium rounded hover:bg-neutral-800 transition-colors active:scale-95 transform disabled:opacity-50 disabled:cursor-not-allowed"
-                                        disabled={item.stock === 0}
-                                    >
-                                        {item.stock === 0 ? "OUT OF STOCK" : "ADD TO CART"}
-                                    </button>
-                                </div>
+                                </Link>
                             </motion.div>
                         ))}
                     </div>
-                )}
+
+                    {displayedProducts.length < (activeFilter === 'ALL' ? ALL_PRODUCTS.length : ALL_PRODUCTS.filter(p => p.category === activeFilter).length) && (
+                        <div className="flex justify-center mt-12 pb-12 border-b border-white/10">
+                            <button
+                                onClick={handleLoadMore}
+                                className="px-8 py-4 text-xs bg-white text-black hover:bg-[#c4c4c4] transition-colors relative overflow-hidden group"
+                            >
+                                <span className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-black"></span>
+                                <span className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-black"></span>
+                                [ LOAD MORE ARCHIVES ]
+                            </button>
+                        </div>
+                    )}
+                </div>
             </div>
-            <Navbar />
-        </main>
+        </div>
     );
 }

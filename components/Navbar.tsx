@@ -1,96 +1,73 @@
-"use client";
+'use client';
 
-import React from "react";
-import { ShoppingCart, User, Store, Home, Search, Bell } from "lucide-react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { useCart } from '@/context/CartContext';
+import { ShoppingBag, Search, Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import SearchOverlay from './SearchOverlay';
 
-import { useCart } from "@/context/CartContext";
+export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const { cartCount, setIsCartOpen } = useCart();
 
-const Navbar: React.FC = () => {
-  const pathname = usePathname();
-  const { cartCount } = useCart();
+    return (
+        <>
+            <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0a0a0a]/90 backdrop-blur-md text-white transition-all duration-300">
+                <div className="w-full px-6 md:px-12 h-24 flex items-center justify-between">
+                    <div className="flex items-center gap-12">
+                        <Link href="/" className="text-3xl font-bold tracking-tighter flex items-center gap-2 group font-display uppercase">
+                            SPADEDROP
+                        </Link>
+                    </div>
 
-  const navItems = [
-    { id: "home", icon: Home, label: "Home", href: "/" },
-    { id: "store", icon: Store, label: "Store", href: "/store" },
-    { id: "search", icon: Search, label: "Search", href: "/search" },
-    { id: "notifications", icon: Bell, label: "Alerts", href: "/notifications" },
-    { id: "cart", icon: ShoppingCart, label: "Cart", href: "/cart", badge: cartCount > 0 ? cartCount.toString() : undefined },
-    { id: "profile", icon: User, label: "Profile", href: "/profile" },
-  ];
+                    <div className="hidden md:flex flex-1 justify-center">
+                        <nav className="flex gap-12 text-xs uppercase tracking-widest text-[#a3a3a3]">
+                            <Link href="/store" className="hover:text-white transition-colors relative group">
+                                <span className="absolute -left-3 opacity-0 group-hover:opacity-100 transition-opacity">┌</span>
+                                Store
+                                <span className="absolute -right-3 opacity-0 group-hover:opacity-100 transition-opacity">┐</span>
+                            </Link>
+                            <Link href="/about" className="hover:text-white transition-colors relative group">
+                                <span className="absolute -left-3 opacity-0 group-hover:opacity-100 transition-opacity">┌</span>
+                                About
+                                <span className="absolute -right-3 opacity-0 group-hover:opacity-100 transition-opacity">┐</span>
+                            </Link>
+                        </nav>
+                    </div>
 
-  const isActive = (href: string) => {
-    if (href === "/" && pathname !== "/") return false;
-    return pathname.startsWith(href);
-  };
+                    <div className="flex items-center gap-6 text-xs uppercase tracking-widest text-[#a3a3a3]">
+                        <button
+                            onClick={() => setIsSearchOpen(true)}
+                            className="hover:text-white transition-colors uppercase tracking-widest hidden md:block"
+                        >
+                            [ Search ]
+                        </button>
+                        <button
+                            className="hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2 group"
+                            onClick={() => setIsCartOpen(true)}
+                        >
+                            [ Cart {cartCount > 0 && <span className="text-white">({cartCount})</span>} ]
+                        </button>
+                        <button className="md:hidden text-white shrink-0" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        </button>
+                    </div>
+                </div>
+            </header>
 
-  return (
-    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto">
-      {/* Main Navbar */}
-      <motion.div
-        className="glass-pill p-3 flex items-center gap-2 shadow-2xl"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        {navItems.map((item) => (
-          <Link key={item.id} href={item.href}>
-            <motion.div
-              className="relative flex items-center justify-center w-12 h-12 rounded-full transition group"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {/* Background for active state */}
-              {isActive(item.href) && (
-                <motion.div
-                  className="absolute inset-0 bg-black/5 rounded-full"
-                  layoutId="navbar-bg"
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                />
-              )}
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+                <div className="md:hidden fixed inset-0 top-24 z-30 bg-[#0a0a0a] border-t border-white/10 text-white flex flex-col font-mono uppercase tracking-widest">
+                    <nav className="flex flex-col p-8 gap-8 text-sm text-[#a3a3a3]">
+                        <Link href="/store" onClick={() => setIsMenuOpen(false)} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between"><span>01</span> STORE</Link>
+                        <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between"><span>02</span> ABOUT</Link>
+                        <button onClick={() => { setIsSearchOpen(true); setIsMenuOpen(false); }} className="hover:text-white transition-colors border-b border-white/10 pb-4 flex justify-between uppercase"><span>03</span> SEARCH</button>
+                    </nav>
+                </div>
+            )}
 
-              {/* Icon */}
-              <item.icon
-                size={20}
-                className={`relative z-10 transition ${isActive(item.href)
-                  ? "text-accent"
-                  : "text-neutral-400 group-hover:text-black"
-                  }`}
-              />
-
-              {/* Badge */}
-              {item.badge && (
-                <motion.div
-                  className="absolute -top-1 -right-1 w-5 h-5 bg-accent rounded-full flex items-center justify-center text-white text-xs font-bold"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                >
-                  {item.badge}
-                </motion.div>
-              )}
-
-              {/* Tooltip */}
-              <div className="absolute bottom-full mb-2 px-3 py-1 bg-black text-white text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none">
-                {item.label}
-              </div>
-            </motion.div>
-          </Link>
-        ))}
-      </motion.div>
-
-      {/* Status Bar */}
-      <motion.div
-        className="glass-panel mt-4 px-6 py-2 text-center text-xs tech-text text-neutral-500"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        <span className="text-accent">●</span> System Operational
-      </motion.div>
-    </div>
-  );
-};
-
-export default Navbar;
+            <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+        </>
+    );
+}

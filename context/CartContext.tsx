@@ -1,108 +1,94 @@
-"use client";
+'use client'
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Product } from '@/data/products';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-export interface CartItem extends Product {
+type CartItem = {
+    id: string;
+    name: string;
+    price: number;
     quantity: number;
-}
+    image: string;
+};
 
-interface CartContextType {
+type CartContextType = {
     items: CartItem[];
-    addToCart: (product: Product) => void;
-    removeFromCart: (productId: string) => void;
-    updateQuantity: (productId: string, quantity: number) => void;
-    clearCart: () => void;
-    favorites: string[]; // List of product IDs
-    toggleFavorite: (productId: string) => void;
+    addToCart: (item: CartItem) => void;
+    removeFromCart: (id: string) => void;
+    updateQuantity: (id: string, quantity: number) => void;
     cartCount: number;
     cartTotal: number;
-}
+    isCartOpen: boolean;
+    setIsCartOpen: (isOpen: boolean) => void;
+};
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-export const CartProvider = ({ children }: { children: ReactNode }) => {
+export function CartProvider({ children }: { children: React.ReactNode }) {
     const [items, setItems] = useState<CartItem[]>([]);
-    const [favorites, setFavorites] = useState<string[]>([]);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
-    // Load from localStorage on mount
     useEffect(() => {
-        const savedCart = localStorage.getItem('spade_cart');
-        const savedFavs = localStorage.getItem('spade_favs');
-        if (savedCart) setItems(JSON.parse(savedCart));
-        if (savedFavs) setFavorites(JSON.parse(savedFavs));
-        setIsLoaded(true);
+        setMounted(true);
+        const saved = localStorage.getItem('cart');
+        if (saved) {
+            try {
+                setItems(JSON.parse(saved));
+            } catch (e) {
+                console.error('Failed to parse cart');
+            }
+        }
     }, []);
 
-    // Save to localStorage on change
     useEffect(() => {
-        if (isLoaded) {
-            localStorage.setItem('spade_cart', JSON.stringify(items));
-            localStorage.setItem('spade_favs', JSON.stringify(favorites));
+        if (mounted) {
+            localStorage.setItem('cart', JSON.stringify(items));
         }
-    }, [items, favorites, isLoaded]);
+    }, [items, mounted]);
 
-    const addToCart = (product: Product) => {
-        setItems(prev => {
-            const existing = prev.find(item => item.id === product.id);
-            if (existing) {
-                return prev.map(item =>
-                    item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    const addToCart = (newItem: CartItem) => {
+        setItems((currentItems) => {
+            const existingItem = currentItems.find((item) => item.id === newItem.id);
+            if (existingItem) {
+                return currentItems.map((item) =>
+                    item.id === newItem.id ? { ...item, quantity: item.quantity + newItem.quantity } : item
                 );
             }
-            return [...prev, { ...product, quantity: 1 }];
+            return [...currentItems, newItem];
         });
+        setIsCartOpen(true);
     };
 
-    const removeFromCart = (productId: string) => {
-        setItems(prev => prev.filter(item => item.id !== productId));
+    const removeFromCart = (id: string) => {
+        setItems((current) => current.filter((item) => item.id !== id));
     };
 
-    const updateQuantity = (productId: string, quantity: number) => {
+    const updateQuantity = (id: string, quantity: number) => {
         if (quantity < 1) {
-            removeFromCart(productId);
+            removeFromCart(id);
             return;
         }
-        setItems(prev => prev.map(item =>
-            item.id === productId ? { ...item, quantity } : item
-        ));
-    };
-
-    const clearCart = () => setItems([]);
-
-    const toggleFavorite = (productId: string) => {
-        setFavorites(prev =>
-            prev.includes(productId)
-                ? prev.filter(id => id !== productId)
-                : [...prev, productId]
+        setItems((current) =>
+            current.map((item) => (item.id === id ? { ...item, quantity } : item))
         );
     };
 
-    const cartCount = items.reduce((acc, item) => acc + item.quantity, 0);
-    const cartTotal = items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    const cartCount = items.reduce((total, item) => total + item.quantity, 0);
+    const cartTotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
 
     return (
         <CartContext.Provider value={{
-            items,
-            addToCart,
-            removeFromCart,
-            updateQuantity,
-            clearCart,
-            favorites,
-            toggleFavorite,
-            cartCount,
-            cartTotal
+            items, addToCart, removeFromCart, updateQuantity, cartCount, cartTotal, isCartOpen, setIsCartOpen
         }}>
             {children}
         </CartContext.Provider>
     );
-};
+}
 
-export const useCart = () => {
+export function useCart() {
     const context = useContext(CartContext);
     if (context === undefined) {
         throw new Error('useCart must be used within a CartProvider');
     }
     return context;
-};
+}
