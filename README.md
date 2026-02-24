@@ -1,4 +1,4 @@
-# 🔴 Nothing Store - Futuristic 3D E-Commerce
+# 🔴 SpadeDrop Store - Futuristic 3D E-Commerce
 
 A premium, industrial 3D e-commerce experience featuring glass-refraction effects, dot-matrix typography, and minimalist design inspired by the "Nothing" brand aesthetic.
 
