@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, TrendingUp } from "lucide-react";
+import { Zap, TrendingUp, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { featuredProducts } from "@/lib/products";
+import { useCart } from "@/lib/CartContext";
 
 // Filtering only trending products
 const trendingProducts = featuredProducts.filter(p => p.trending);
 
 export default function TrendingPage() {
+  const { addToCart, cartItems } = useCart();
+
   return (
     <div className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#fdfdf9] font-serif">
       <motion.div
@@ -18,7 +21,7 @@ export default function TrendingPage() {
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-primary-950">Trending Now</h1>
         <p className="text-primary-800/80 max-w-2xl mx-auto">
-          The highest-converting, most profitable items currently moving through our automated dropshipping pipeline.
+          The highest-converting, most desirable items currently in our collection.
         </p>
       </motion.div>
 
@@ -54,13 +57,11 @@ export default function TrendingPage() {
 
               <div className="mt-auto">
                 <button
+                  onClick={() => addToCart(product)}
                   className="w-full py-4 rounded-xl text-white font-bold transition-all flex items-center justify-center gap-2 bg-primary-800 hover:bg-primary-900 hover:shadow-[0_0_20px_rgba(132,104,79,0.2)]"
                 >
-                  <Zap size={18} /> Simulate Auto-Fulfill
+                  <ShoppingCart size={18} /> Add to Cart
                 </button>
-                <p className="text-sm text-center text-emerald-700 mt-4 font-bold flex items-center justify-center gap-1">
-                  <TrendingUp size={14} /> {product.profitMargin}
-                </p>
               </div>
             </div>
           </motion.div>

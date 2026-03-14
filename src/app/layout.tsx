@@ -19,6 +19,9 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SalesBanner from "@/components/SalesBanner";
+import SalesPopup from "@/components/SalesPopup";
+import { CartProvider } from "@/lib/CartContext";
 
 export default function RootLayout({
   children,
@@ -30,11 +33,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Navbar />
-        <main className="flex-grow pt-20">
-          {children}
-        </main>
-        <Footer />
+        <CartProvider>
+          <SalesBanner />
+          <Navbar />
+          <main className="flex-grow pt-[116px]">
+            {children}
+          </main>
+          <Footer />
+          <SalesPopup />
+        </CartProvider>
       </body>
     </html>
   );

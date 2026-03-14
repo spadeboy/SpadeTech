@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, TrendingUp } from "lucide-react";
+import { Zap, TrendingUp, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { featuredProducts, generateProducts } from "@/lib/products";
+import { useCart } from "@/lib/CartContext";
 
 // Generating more products for the dedicated products page
 const allProducts = generateProducts(16);
 
 export default function ProductsPage() {
+  const { addToCart } = useCart();
+
   return (
     <div className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#fdfdf9] font-serif">
       <motion.div
@@ -18,7 +21,7 @@ export default function ProductsPage() {
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-primary-950">All Products</h1>
         <p className="text-primary-800/80 max-w-2xl mx-auto">
-          Our entire automated catalog, ready for instant sourcing and profit generation.
+          Our entire collection, curated for quality and aesthetic.
         </p>
       </motion.div>
 
@@ -51,13 +54,11 @@ export default function ProductsPage() {
               
               <div className="mt-auto">
                 <button 
+                  onClick={() => addToCart(product)}
                   className="w-full py-4 rounded-xl text-white font-bold transition-all flex items-center justify-center gap-2 bg-primary-800 hover:bg-primary-900 hover:shadow-[0_0_20px_rgba(132,104,79,0.2)]"
                 >
-                  <Zap size={18} /> Simulate Auto-Fulfill
+                  <ShoppingCart size={18} /> Add to Cart
                 </button>
-                <p className="text-sm text-center text-emerald-700 mt-4 font-bold flex items-center justify-center gap-1">
-                  <TrendingUp size={14} /> {product.profitMargin}
-                </p>
               </div>
             </div>
           </motion.div>

@@ -2,83 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Zap, TrendingUp, ShieldCheck, CheckCircle2, DollarSign } from "lucide-react";
+import { ArrowRight, ShoppingCart, ShieldCheck, CheckCircle2, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { featuredProducts, Product } from "@/lib/products";
-
-// Toast Notification System
-function Toast({ message, type = "success", onClose }: { message: string, type?: "success" | "info", onClose: () => void }) {
-  useEffect(() => {
-    const timer = setTimeout(onClose, 3000);
-    return () => clearTimeout(timer);
-  }, [onClose]);
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 50, scale: 0.9 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-      className={`fixed bottom-6 right-6 z-50 flex items-center gap-3 px-6 py-4 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] border ${
-        type === "success" 
-          ? "glass-panel border-emerald-600/30" 
-          : "glass-panel border-primary-500/30"
-      }`}
-    >
-      {type === "success" ? <CheckCircle2 className="text-emerald-700" /> : <Zap className="text-primary-700" />}
-      <span className="font-medium text-primary-950">{message}</span>
-    </motion.div>
-  );
-}
+import { useCart } from "@/lib/CartContext";
 
 export default function Home() {
-  const [totalProfit, setTotalProfit] = useState(0);
-  const [processingId, setProcessingId] = useState<string | null>(null);
-  const [toasts, setToasts] = useState<{ id: number, message: string, type: "success"|"info" }[]>([]);
-
-  const addToast = (message: string, type: "success"|"info" = "success") => {
-    setToasts(prev => [...prev, { id: Date.now(), message, type }]);
-  };
-
-  const removeToast = (id: number) => {
-    setToasts(prev => prev.filter(t => t.id !== id));
-  };
-
-  const handleFulfill = (product: Product) => {
-    if (processingId) return;
-    
-    setProcessingId(product.id);
-    addToast(`Processing proxy order for ${product.name}...`, "info");
-    
-    // Simulate automatic fulfillment API
-    setTimeout(() => {
-      const profitNum = parseFloat(product.profitMargin.replace(/[^0-9.]/g, ''));
-      setTotalProfit(prev => prev + profitNum);
-      setProcessingId(null);
-      addToast(`Order Automatically Fulfilled! +$${profitNum.toFixed(2)} Profit Sent to Bank!`, "success");
-    }, 1500);
-  };
+  const { addToCart } = useCart();
 
   return (
     <div className="flex flex-col min-h-screen font-serif bg-[#fdfdf9]">
-      {/* Total Profit Tracker Overlay */}
-      <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        className="fixed top-24 left-6 z-40 glass-panel px-6 py-4 rounded-2xl flex flex-col items-start gap-1 border-emerald-600/20 shadow-md"
-      >
-        <span className="text-xs text-primary-800/80 uppercase tracking-wider font-bold">Total Automated Profit</span>
-        <div className="flex items-center text-emerald-700 text-3xl font-black">
-          <DollarSign size={28} />
-          {totalProfit.toFixed(2)}
-        </div>
-      </motion.div>
-
-      <AnimatePresence>
-        {toasts.map(t => (
-          <Toast key={t.id} message={t.message} type={t.type} onClose={() => removeToast(t.id)} />
-        ))}
-      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
@@ -90,24 +24,24 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8 text-sm text-primary-800 font-medium border border-primary-400/30 shadow-[0_0_15px_rgba(132,104,79,0.1)]"
           >
-            <Zap size={16} className="text-primary-700" /> Fully Automated Dropshipping
+            <Star size={16} className="text-primary-700" /> Premium Curated Selection
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-primary-950"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 text-primary-950"
           >
-            The Future of E-Commerce <br />
-            <span className="text-gradient">Is Fully Automated</span>
+            Elevate Your Lifestyle <br />
+            <span className="text-gradient">With Our Collection</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-primary-800/80 max-w-2xl mx-auto mb-12"
+            className="text-lg sm:text-xl text-primary-800/80 max-w-2xl mx-auto mb-10 md:mb-12 px-4"
           >
-            We handle the products, the scaling, and the fulfillment. You just collect the profits. Start simulating our premium automated flow below.
+            Discover meticulously sourced tech, home, and lifestyle essentials that blend aesthetic design with everyday utility.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -116,7 +50,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row justify-center gap-6"
           >
             <Link href="#products" className="bg-primary-800 hover:bg-primary-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(132,104,79,0.2)] flex items-center justify-center gap-2">
-              Simulate Orders <ArrowRight size={20} />
+              Shop Now <ArrowRight size={20} />
             </Link>
           </motion.div>
         </div>
@@ -124,11 +58,11 @@ export default function Home() {
 
       {/* Feature Highlights */}
       <section className="border-y border-primary-200 bg-[#fbfbf8]/80 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
-            { icon: Zap, title: "1-Click Sourcing", desc: "Products are automatically imported to your store." },
-            { icon: ShieldCheck, title: "Automated Fulfillment", desc: "Orders are processed and shipped absolutely automatically." },
-            { icon: TrendingUp, title: "Direct to Bank", desc: "The margin is extracted and deposited immediately." }
+            { icon: CheckCircle2, title: "Curated Quality", desc: "Every item is hand-selected and verified to meet our highest standards." },
+            { icon: ShieldCheck, title: "Secure Checkout", desc: "Your purchases are processed securely with encrypted checkout." },
+            { icon: Star, title: "Customer Obsessed", desc: "We provide dedicated support to ensure a seamless experience." }
           ].map((feature, idx) => (
             <motion.div 
               key={idx}
@@ -156,8 +90,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-primary-950">Live Product Feed</h2>
-              <p className="text-primary-800/80">Automatically synchronized items with max profit margins.</p>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-primary-950">Featured Items</h2>
+              <p className="text-primary-800/80">Our most requested and highly-rated products.</p>
             </div>
           </div>
 
@@ -195,23 +129,11 @@ export default function Home() {
                   
                   <div className="mt-auto">
                     <button 
-                      onClick={() => handleFulfill(product)}
-                      disabled={processingId !== null}
-                      className={`w-full py-4 rounded-xl text-white font-bold transition-all flex items-center justify-center gap-2 ${
-                        processingId === product.id 
-                          ? "bg-primary-400 animate-pulse cursor-not-allowed" 
-                          : "bg-primary-800 hover:bg-primary-900 hover:shadow-[0_0_20px_rgba(132,104,79,0.2)]"
-                      }`}
+                      onClick={() => addToCart(product)}
+                      className="w-full py-4 rounded-xl text-white font-bold transition-all flex items-center justify-center gap-2 bg-primary-800 hover:bg-primary-900 hover:shadow-[0_0_20px_rgba(132,104,79,0.2)]"
                     >
-                      {processingId === product.id ? (
-                        <>Processing...</>
-                      ) : (
-                        <><Zap size={18} /> Simulate Auto-Fulfill</>
-                      )}
+                      <ShoppingCart size={18} /> Add to Cart
                     </button>
-                    <p className="text-sm text-center text-emerald-700 mt-4 font-bold flex items-center justify-center gap-1">
-                      <TrendingUp size={14} /> {product.profitMargin}
-                    </p>
                   </div>
                 </div>
               </motion.div>
